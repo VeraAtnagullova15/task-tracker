@@ -1,3 +1,23 @@
 spring:
   application:
     name: task-tracker-backend
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:
+    username: bestUser
+    password: bestUser
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresDialect
+
+server:
+  port: 8080
+
+jwt:
+  secret: ZMWhs6O9dCGJBcS4tmdr02PQ049SmktXV9pPEDn1DLR
+  lifetime: 120
+
