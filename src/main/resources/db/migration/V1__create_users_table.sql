@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS users
+(
+    id BIGSERIAL PRIMARY KEY,
+    email VARCHAR(64) NOT NULL UNIQUE,
+    password VARCHAR(64) NOT NULL
+    );

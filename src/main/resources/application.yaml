@@ -3,21 +3,27 @@ spring:
     name: task-tracker-backend
 
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url:
-    username: bestUser
-    password: bestUser
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
 
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: validate
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgresDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
 
 server:
   port: 8080
 
 jwt:
-  secret: ZMWhs6O9dCGJBcS4tmdr02PQ049SmktXV9pPEDn1DLR
-  lifetime: 120
+  secret: ${JWT_SECRET}
+  lifetime: 90
 
