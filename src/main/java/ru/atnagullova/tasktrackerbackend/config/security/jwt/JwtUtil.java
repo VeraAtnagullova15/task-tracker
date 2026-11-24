@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 import ru.atnagullova.tasktrackerbackend.config.security.CustomUserDetailsImpl;
 import ru.atnagullova.tasktrackerbackend.config.security.CustomUserDetailsServiceImpl;
 import ru.atnagullova.tasktrackerbackend.dto.JwtAuthDto;
-import ru.atnagullova.tasktrackerbackend.dto.UserCredentialsDto;
 
 import javax.crypto.SecretKey;
 import java.time.LocalDateTime;
