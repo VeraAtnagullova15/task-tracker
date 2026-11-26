@@ -71,7 +71,7 @@ public class JwtUtil {
         } catch (SecurityException securityException) {
             log.debug("Security exception", securityException);
         } catch (Exception e) {
-            log.debug("Unexpected error while cheking token", e);
+            log.debug("Unexpected error while checking token", e);
         }
 
         return false;

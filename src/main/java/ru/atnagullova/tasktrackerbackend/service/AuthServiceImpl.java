@@ -89,8 +89,6 @@ public class AuthServiceImpl implements AuthService {
 
         CustomUserDetailsImpl userDetails = (CustomUserDetailsImpl) authentication.getPrincipal();
 
-
-
         return new UserResponseDto(userDetails.getId(), userDetails.getUsername());
 
     }
